@@ -40,10 +40,10 @@ const MainPage = () => {
         </section>
 
         <section className="main-page__block">
-          <h2 className="main-page__block-title">Мой STACK</h2>
+          <h2 className="main-page__block-title">Мои навыки</h2>
           <p className="main-page__block-text">
-            HTML5/CSS3, Flex/Grid, SCSS, LESS, BEM, JavaScript/TypeScript, Webpack, Gulp, React.js, React hooks,
-            Redux/Redux toolkit, Mobx, Jest, Node.js, Express.js, Git, Figma, Photoshop.
+            HTML5/CSS3, Flex/Grid, SCSS, LESS, BEM, JavaScript/TypeScript, React.js, React hooks, Redux/Redux toolkit,
+            Mobx, Jest, Webpack, Gulp, Node.js, Express.js, Git, Figma, Photoshop.
           </p>
         </section>
 
