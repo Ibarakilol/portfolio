@@ -1,0 +1,7 @@
+@import "src/scss/variables.scss";
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}

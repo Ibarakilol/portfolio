@@ -1,0 +1,39 @@
+@import "src/scss/variables.scss";
+
+.button {
+  background-color: $color-primary-2;
+  border-radius: 4px;
+  display: grid;
+  padding: 10px 20px;
+  position: relative;
+  transition: background-color $transition-time;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color: $color-primary-2, $amount: 10);
+  }
+}
+
+.button_icon {
+  padding-right: 40px;
+}
+
+.button__icon {
+  color: $color-text-body;
+  display: grid;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  svg {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+.button__label {
+  color: $color-text-body;
+  font-size: $font-size-button;
+  font-weight: 700;
+}

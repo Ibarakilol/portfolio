@@ -1,0 +1,60 @@
+@import "src/scss/variables.scss";
+@import "src/scss/mixins/breakpoints.scss";
+
+.header {
+  backdrop-filter: blur(10px);
+  background-color: rgba($color: $color-white, $alpha: 0.25);
+  display: grid;
+  height: 50px;
+  justify-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header__wrapper {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  max-width: 752px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.header__logo {
+  color: $color-white;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.header__nav {
+  align-items: center;
+  background-color: $color-white;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba($color: $color-black, $alpha: 0.05);
+  display: none;
+  grid-auto-flow: row;
+  padding: 8px 0;
+  position: absolute;
+  right: 16px;
+  top: 50px;
+  width: 222px;
+
+  @include tablet() {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: column;
+    padding: 0;
+    position: initial;
+    width: 100%;
+  }
+}
+
+.header__nav_active {
+  display: grid;
+}

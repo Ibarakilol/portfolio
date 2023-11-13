@@ -1,0 +1,76 @@
+@import "src/scss/variables.scss";
+@import "src/scss/mixins/breakpoints.scss";
+
+.header-link {
+  padding: 6px 13px;
+  position: relative;
+  transition: background-color $transition-time;
+
+  @include tablet() {
+    padding: 0;
+
+    &::after {
+      background-color: $color-white;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 0;
+      left: 0;
+      position: absolute;
+      transition: height $transition-time;
+      width: 100%;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-borders-basic;
+
+    @include tablet() {
+      background-color: transparent;
+
+      &::after {
+        height: 2px;
+      }
+    }
+  }
+}
+
+.header-link_icon {
+  @include tablet() {
+    padding-left: 20px;
+  }
+}
+
+.header-link_active {
+  background-color: $color-borders-basic;
+
+  @include tablet() {
+    background-color: transparent;
+
+    &::after {
+      height: 2px;
+    }
+  }
+}
+
+.header-link__icon {
+  display: none;
+
+  @include tablet() {
+    color: $color-white;
+    display: grid;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.header-link__label {
+  color: $color-black;
+
+  @include tablet() {
+    color: $color-white;
+  }
+}

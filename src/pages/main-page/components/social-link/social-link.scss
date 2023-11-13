@@ -1,0 +1,26 @@
+@import "src/scss/variables.scss";
+
+.social-link {
+  border-radius: 4px;
+  padding: 8px 16px 8px 40px;
+  position: relative;
+  transition: background-color $transition-time;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color: $color-primary-2, $alpha: 0.5);
+  }
+}
+
+.social-link__icon {
+  color: $color-white;
+  display: grid;
+  left: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social-link__label {
+  color: $color-white;
+}

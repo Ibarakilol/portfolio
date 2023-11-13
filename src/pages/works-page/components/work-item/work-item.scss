@@ -1,0 +1,42 @@
+@import "src/scss/variables.scss";
+
+.work-item {
+  display: grid;
+  gap: 8px;
+
+  &:hover {
+    .work-item__image {
+      box-shadow: 0 0 10px 5px rgba($color: $color-white, $alpha: 0.8);
+    }
+  }
+}
+
+.work-item__image {
+  border-radius: 10px;
+  transition: box-shadow $transition-time;
+}
+
+.work-item__title {
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+
+.work-item__title_with-icon {
+  padding-left: 20px;
+
+  &::before {
+    background: url("~/src/assets/icons/github.svg") no-repeat 50% / cover;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+  }
+}
+
+.work-item__description {
+  font-size: 14px;
+}

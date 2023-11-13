@@ -1,0 +1,31 @@
+@import "src/scss/variables.scss";
+@import "src/scss/mixins/breakpoints.scss";
+
+.works-page {
+  display: grid;
+  gap: 50px;
+  width: 100%;
+}
+
+.works-page__block {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+}
+
+.works-page__title {
+  color: $color-white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.works-page__items {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+
+  @include tablet() {
+    gap: 50px 25px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,17 @@
+.main-layout {
+  display: grid;
+  gap: 40px;
+}
+
+.main-layout__wrapper {
+  display: grid;
+  gap: 15px;
+  justify-items: center;
+  justify-self: center;
+  max-width: 604px;
+  padding: 0 16px;
+}
+
+.main-layout__hero {
+  max-width: 428px;
+}

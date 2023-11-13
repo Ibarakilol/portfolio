@@ -1,0 +1,45 @@
+@import "src/scss/variables.scss";
+
+.main-page {
+  display: grid;
+  gap: 20px;
+}
+
+.main-page__info-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.main-page__block {
+  display: grid;
+  gap: 15px;
+  justify-items: start;
+}
+
+.main-page__block-title {
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+
+  &::before {
+    background-color: $color-white;
+    bottom: -4px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.main-page__block-text {
+  text-align: justify;
+  text-indent: 16px;
+}
+
+.main-page__block-button {
+  justify-self: center;
+}
+
+.main-page__block-list {
+  display: grid;
+}
