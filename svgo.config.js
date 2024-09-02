@@ -13,7 +13,13 @@ module.exports = {
         },
       },
     },
-    'prefixIds',
+    {
+      name: 'prefixIds',
+      params: {
+        prefixIds: true,
+        prefixClassNames: false,
+      },
+    },
     {
       name: 'sortAttrs',
       params: {

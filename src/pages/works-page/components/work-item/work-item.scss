@@ -6,7 +6,18 @@
 
   &:hover {
     .work-item__image {
-      box-shadow: 0 0 10px 5px rgba($color: $color-white, $alpha: 0.8);
+      box-shadow: 0 0 10px 5px rgba($color: $color-secondary, $alpha: 0.6);
+    }
+
+    .work-item__title,
+    .work-item__description {
+      color: $color-secondary;
+    }
+
+    .work-item__title_with-icon {
+      &::before {
+        background-color: $color-secondary;
+      }
     }
   }
 }
@@ -17,26 +28,32 @@
 }
 
 .work-item__title {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
   position: relative;
+  transition: color $transition-time;
 }
 
 .work-item__title_with-icon {
   padding-left: 20px;
 
   &::before {
-    background: url("~/src/assets/icons/github.svg") no-repeat 50% / cover;
+    background-color: $color-text-body;
     content: "";
     height: 15px;
+    mask-image: url("~/src/assets/icons/github.svg");
+    mask-size: cover;
     left: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    transition: background-color $transition-time;
     width: 15px;
   }
 }
 
 .work-item__description {
   font-size: 14px;
+  transition: color $transition-time;
 }

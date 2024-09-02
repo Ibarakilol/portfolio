@@ -1,7 +1,7 @@
 @import "src/scss/variables.scss";
 
 .button {
-  background-color: $color-primary-2;
+  background-color: $color-secondary;
   border-radius: 4px;
   display: grid;
   padding: 10px 20px;
@@ -10,16 +10,16 @@
 
   &:hover,
   &:focus {
-    background-color: darken($color: $color-primary-2, $amount: 10);
+    background-color: darken($color: $color-secondary, $amount: 5);
   }
 }
 
-.button_icon {
+.button_with-icon {
   padding-right: 40px;
 }
 
 .button__icon {
-  color: $color-text-body;
+  color: $color-white;
   display: grid;
   position: absolute;
   right: 14px;
@@ -33,7 +33,7 @@
 }
 
 .button__label {
-  color: $color-text-body;
+  color: $color-white;
   font-size: $font-size-button;
   font-weight: 700;
 }

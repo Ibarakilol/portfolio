@@ -1,5 +1,4 @@
-import React from 'react';
-import classNames from 'classnames';
+import clsx from 'clsx';
 
 import type { BurgerProps } from './burger.props';
 
@@ -7,7 +6,7 @@ import './burger.scss';
 
 const Burger = ({ active, onClick }: BurgerProps) => {
   return (
-    <button className={classNames('burger', active && 'burger_active')} onClick={onClick}>
+    <button className={clsx('burger', active && 'burger_active')} onClick={onClick}>
       <span className="burger__line" />
     </button>
   );

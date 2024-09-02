@@ -20,14 +20,14 @@
 }
 
 .burger__line {
-  background-color: $color-white;
+  background-color: $color-text-body;
   display: block;
   height: 2px;
   position: relative;
 
   &::before,
   &::after {
-    background-color: $color-white;
+    background-color: $color-text-body;
     content: "";
     height: 2px;
     left: 0;

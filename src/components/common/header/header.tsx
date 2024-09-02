@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import classNames from 'classnames';
+import clsx from 'clsx';
 
 import Burger from './components/burger';
 import HeaderLink from './components/header-link';
-import { ReactComponent as GitHubIcon } from 'src/assets/icons/github.svg';
+import { ReactComponent as GitHubIcon } from '@/assets/icons/github.svg';
 
-import { AppRoute } from 'src/constants';
+import { AppRoute } from '@/constants';
 
 import './header.scss';
 
@@ -20,11 +20,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__wrapper">
-        <Link className="header__logo" to={AppRoute.MAIN}>
+        <Link className="header__logo" to={AppRoute.ROOT}>
           {'<NL />'}
         </Link>
 
-        <nav className={classNames('header__nav', openNav && 'header__nav_active')}>
+        <nav className={clsx('header__nav', openNav && 'header__nav_active')}>
           <HeaderLink label="Работы" href={AppRoute.WORKS} onClick={handleCloseNav} />
           <HeaderLink label="Резюме" href="/cv/cv_rus_doc.pdf" tag="a" onClick={handleCloseNav} />
           <HeaderLink

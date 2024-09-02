@@ -1,12 +1,11 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import Button from 'src/components/ui/button';
+import Button from '@/components/ui/button';
 import SocialLink from './components/social-link';
-import { ReactComponent as ChevronRightIcon } from 'src/assets/icons/chevron-right.svg';
-import { ReactComponent as TelegramIcon } from 'src/assets/icons/telegram.svg';
+import { ReactComponent as ChevronRightIcon } from '@/assets/icons/chevron-right.svg';
+import { ReactComponent as TelegramIcon } from '@/assets/icons/telegram.svg';
 
-import { AppRoute } from 'src/constants';
+import { AppRoute } from '@/constants';
 
 import './main-page.scss';
 
@@ -26,9 +25,10 @@ const MainPage = () => {
         <section className="main-page__block">
           <h2 className="main-page__block-title">Обо мне</h2>
           <p className="main-page__block-text">
-            Привет! Я Front-End разработчик с большим опытом работы, страстно увлеченный созданием цифровых сервисов и
-            материалов. У меня есть талант ко всему, что касается запуска "продуктов", от планирования и проектирования
-            до решения реальных проблем с помощью кода.
+            Привет! Я Front-End разработчик с большим опытом работы, страстно увлеченный созданием
+            цифровых сервисов и материалов. У меня есть талант ко всему, что касается запуска
+            "продуктов", от планирования и проектирования до решения реальных проблем с помощью
+            кода.
           </p>
           <Button
             className="main-page__block-button"
@@ -42,16 +42,21 @@ const MainPage = () => {
         <section className="main-page__block">
           <h2 className="main-page__block-title">Мои навыки</h2>
           <p className="main-page__block-text">
-            HTML5/CSS3, Flex/Grid, SCSS, LESS, BEM, JavaScript/TypeScript, React.js, React hooks, Redux/Redux toolkit,
-            Mobx, Jest, Webpack, Gulp, Node.js, Express.js, Git, Figma, Photoshop.
+            HTML5/CSS3, Flex/Grid, SCSS, LESS, BEM, JavaScript/TypeScript, React.js, React hooks,
+            Redux/Redux toolkit, Mobx, Jest, Webpack, Gulp, Node.js, Express.js, Git, Figma,
+            Photoshop.
           </p>
         </section>
 
         <section className="main-page__block">
-          <h2 className="main-page__block-title">В социальных сетях</h2>
+          <h2 className="main-page__block-title">Социальные сети</h2>
           <ul className="main-page__block-list">
             <li className="main-page__block-item">
-              <SocialLink label="@ibarakil0l" href="https://t.me/ibarakil0l" icon={<TelegramIcon />} />
+              <SocialLink
+                label="@ibarakil0l"
+                href="https://t.me/ibarakil0l"
+                icon={<TelegramIcon />}
+              />
             </li>
           </ul>
         </section>

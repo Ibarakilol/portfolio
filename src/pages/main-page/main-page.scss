@@ -22,7 +22,7 @@
   position: relative;
 
   &::before {
-    background-color: $color-white;
+    background-color: $color-text-body;
     bottom: -4px;
     content: "";
     height: 4px;

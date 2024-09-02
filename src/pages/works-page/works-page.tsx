@@ -1,4 +1,3 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import WorkItem from './components/work-item';
@@ -17,7 +16,7 @@ const WorksPage = () => {
           <span className="works-page__title">Работы</span>
           <div className="works-page__items">
             <WorkItem
-              title="Posbon"
+              title="Посбон"
               description="Веб-сайт агента ритуальных услуг организации «ПОСБОН»"
               href="https://lopanov-posbon24.ru"
               imageSrc="/works/posbon.jpg"
@@ -32,12 +31,6 @@ const WorksPage = () => {
               title="Gulp Webpack Starter"
               description="Готовый к коммерческой верстке Gulp/Webpack стартер"
               href="https://github.com/Ibarakilol/gulp-webpack-starter"
-              withIcon
-            />
-            <WorkItem
-              title="TikTok Downloader Bot"
-              description="Telegram-бот для загрузки видео с TikTok без водяных знаков"
-              href="https://github.com/Ibarakilol/tiktok-downloader-bot"
               withIcon
             />
             <WorkItem

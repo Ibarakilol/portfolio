@@ -1,8 +1,6 @@
-import React from 'react';
-
-import Footer from 'src/components/common/footer';
-import Header from 'src/components/common/header';
-import TableImage from 'src/assets/images/table.png';
+import Footer from '@/components/common/footer';
+import Header from '@/components/common/header';
+import TableImage from '@/assets/images/table.png';
 
 import type { MainLayoutProps } from './main-layout.props';
 

@@ -8,12 +8,12 @@
 
   &:hover,
   &:focus {
-    background-color: rgba($color: $color-primary-2, $alpha: 0.5);
+    background-color: lighten($color: $color-secondary, $amount: 50);
   }
 }
 
 .social-link__icon {
-  color: $color-white;
+  color: $color-secondary;
   display: grid;
   left: 16px;
   position: absolute;
@@ -22,5 +22,5 @@
 }
 
 .social-link__label {
-  color: $color-white;
+  color: $color-secondary;
 }

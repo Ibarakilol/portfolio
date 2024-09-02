@@ -1,13 +1,19 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
-import classNames from 'classnames';
+import clsx from 'clsx';
 
 import type { HeaderLinkProps } from './header-link.props';
 
 import './header-link.scss';
 
-const HeaderLink = ({ href, icon, label, tag = 'link', target = '_blank', onClick }: HeaderLinkProps) => {
-  const headerLinkClasses = classNames('header-link', icon && 'header-link_icon');
+const HeaderLink = ({
+  href,
+  icon,
+  label,
+  tag = 'link',
+  target = '_blank',
+  onClick,
+}: HeaderLinkProps) => {
+  const headerLinkClasses = clsx('header-link', icon && 'header-link_with-icon');
 
   const renderInnerElements = () => (
     <>
@@ -20,7 +26,7 @@ const HeaderLink = ({ href, icon, label, tag = 'link', target = '_blank', onClic
     case 'link':
       return (
         <NavLink
-          className={({ isActive }) => classNames(headerLinkClasses, isActive && 'header-link_active')}
+          className={({ isActive }) => clsx(headerLinkClasses, isActive && 'header-link_active')}
           to={href}
           onClick={onClick}
         >
@@ -29,7 +35,13 @@ const HeaderLink = ({ href, icon, label, tag = 'link', target = '_blank', onClic
       );
     case 'a':
       return (
-        <a className={headerLinkClasses} href={href} target={target} rel="noreferrer" onClick={onClick}>
+        <a
+          className={headerLinkClasses}
+          href={href}
+          target={target}
+          rel="noreferrer"
+          onClick={onClick}
+        >
           {renderInnerElements()}
         </a>
       );

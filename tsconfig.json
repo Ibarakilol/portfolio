@@ -7,7 +7,6 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -16,10 +15,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
-    "importsNotUsedAsValues": "error",
-    "useDefineForClassFields": true,
-    "ignoreDeprecations": "5.0"
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "useDefineForClassFields": true
   },
   "include": ["src"]
 }

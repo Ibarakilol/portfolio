@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import classNames from 'classnames';
+import clsx from 'clsx';
 
 import type { ButtonProps } from './button.props';
 
@@ -16,7 +15,7 @@ const Button = ({
   type = 'button',
   onClick,
 }: ButtonProps) => {
-  const buttonClasses = classNames('button', icon && 'button_icon', className);
+  const buttonClasses = clsx('button', icon && 'button_with-icon', className);
 
   const renderInnerElements = () => (
     <>
