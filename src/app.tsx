@@ -9,19 +9,17 @@ import { AppRoute } from '@/constants';
 
 const App = () => {
   return (
-    <div className="app">
+    <Router basename={AppRoute.ROOT}>
       <ScrollToTop>
-        <Router basename={AppRoute.ROOT}>
-          <MainLayout>
-            <Routes>
-              <Route element={<MainPage />} path={AppRoute.ROOT} />
-              <Route element={<WorksPage />} path={AppRoute.WORKS} />
-              <Route element={<Navigate replace to={AppRoute.ROOT} />} path="*" />
-            </Routes>
-          </MainLayout>
-        </Router>
+        <MainLayout>
+          <Routes>
+            <Route element={<MainPage />} path={AppRoute.ROOT} />
+            <Route element={<WorksPage />} path={AppRoute.WORKS} />
+            <Route element={<Navigate replace to={AppRoute.ROOT} />} path="*" />
+          </Routes>
+        </MainLayout>
       </ScrollToTop>
-    </div>
+    </Router>
   );
 };
 
