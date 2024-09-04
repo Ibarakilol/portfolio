@@ -19,16 +19,16 @@ const MainPage = () => {
       <div className="main-page">
         <section className="main-page__info">
           <h1 className="main-page__info-title">Никита Лопанов</h1>
-          <p className="main-page__info-text">Front-End разработчик ( React.js / React Native )</p>
+          <p className="main-page__info-text">Front-End разработчик ( React.js / Next.js )</p>
         </section>
 
         <section className="main-page__block">
           <h2 className="main-page__block-title">Обо мне</h2>
           <p className="main-page__block-text">
-            Привет! Я Front-End разработчик с большим опытом работы, страстно увлеченный созданием
-            цифровых сервисов и материалов. У меня есть талант ко всему, что касается запуска
-            "продуктов", от планирования и проектирования до решения реальных проблем с помощью
-            кода.
+            Привет! Меня зовут Никита, я Front-End разработчик с большим опытом работы, увлеченный
+            созданием цифровых сервисов и материалов. У меня есть талант ко всему, что касается
+            запуска "продуктов", от планирования и проектирования до решения реальных проблем с
+            помощью кода.
           </p>
           <Button
             className="main-page__block-button"
@@ -42,9 +42,9 @@ const MainPage = () => {
         <section className="main-page__block">
           <h2 className="main-page__block-title">Мои навыки</h2>
           <p className="main-page__block-text">
-            HTML5/CSS3, Flex/Grid, SCSS, LESS, BEM, JavaScript/TypeScript, React.js, React hooks,
-            Redux/Redux toolkit, Mobx, Jest, Webpack, Gulp, Node.js, Express.js, Git, Figma,
-            Photoshop.
+            HTML5/CSS3, Flex/Grid, SCSS, BEM, Tailwind CSS, JavaScript/TypeScript, React.js,
+            Next.js, React hooks, Redux/Redux toolkit, Mobx, Jest, Webpack, Gulp, Node.js,
+            Express.js, Git, Figma, Photoshop.
           </p>
         </section>
 

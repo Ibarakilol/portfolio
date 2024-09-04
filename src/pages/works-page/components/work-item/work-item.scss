@@ -30,7 +30,6 @@
 .work-item__title {
   font-size: 18px;
   font-weight: 500;
-  text-transform: uppercase;
   position: relative;
   transition: color $transition-time;
 }
@@ -42,7 +41,7 @@
     background-color: $color-text-body;
     content: "";
     height: 15px;
-    mask-image: url("~/src/assets/icons/github.svg");
+    mask-image: url("@/assets/icons/github.svg");
     mask-size: cover;
     left: 0;
     position: absolute;

@@ -28,15 +28,21 @@ const WorksPage = () => {
           <span className="works-page__title">Боты/Скрипты</span>
           <div className="works-page__items">
             <WorkItem
-              title="Gulp Webpack Starter"
-              description="Готовый к коммерческой верстке Gulp/Webpack стартер"
-              href="https://github.com/Ibarakilol/gulp-webpack-starter"
+              title="Futures Arbitrage Bot"
+              description="Telegram бот по поиску арбитражных сделок между биржами на фьючерсах"
+              href="https://github.com/Ibarakilol/futures-arbitrage-bot"
               withIcon
             />
             <WorkItem
-              title="Futures Arbitrage Bot"
-              description="Telegram-бот для поиска арбитражных связок между биржами"
-              href="https://github.com/Ibarakilol/futures-arbitrage-bot"
+              title="BestChange Arbitrage Bot"
+              description="Telegram бот по поиску арбитражных сделок между Binance/Bybit и BestChange"
+              href="https://github.com/Ibarakilol/bestchange-arbitrage-bot"
+              withIcon
+            />
+            <WorkItem
+              title="Gulp Webpack Starter"
+              description="Готовый к коммерческой верстке Gulp/Webpack шаблон"
+              href="https://github.com/Ibarakilol/gulp-webpack-starter"
               withIcon
             />
           </div>

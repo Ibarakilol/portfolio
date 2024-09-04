@@ -26,7 +26,7 @@ const Header = () => {
 
         <nav className={clsx('header__nav', openNav && 'header__nav_active')}>
           <HeaderLink label="Работы" href={AppRoute.WORKS} onClick={handleCloseNav} />
-          <HeaderLink label="Резюме" href="/cv/cv_rus_doc.pdf" tag="a" onClick={handleCloseNav} />
+          <HeaderLink label="Резюме" href="/cv/cv_doc.pdf" tag="a" onClick={handleCloseNav} />
           <HeaderLink
             label="GitHub"
             href="https://github.com/Ibarakilol"
