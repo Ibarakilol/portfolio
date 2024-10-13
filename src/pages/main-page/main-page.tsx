@@ -43,8 +43,7 @@ const MainPage = () => {
           <h2 className="main-page__block-title">Мои навыки</h2>
           <p className="main-page__block-text">
             HTML5/CSS3, Flex/Grid, SCSS, BEM, Tailwind CSS, JavaScript/TypeScript, React.js,
-            Next.js, React hooks, Redux/Redux toolkit, Mobx, Jest, Webpack, Gulp, Node.js,
-            Express.js, Git, Figma, Photoshop.
+            Next.js, Mobx, Zustand, Jest, Webpack, Gulp, Node.js, Express.js, Git, Figma.
           </p>
         </section>
 

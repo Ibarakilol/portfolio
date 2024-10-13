@@ -16,6 +16,18 @@ const WorksPage = () => {
           <span className="works-page__title">Работы</span>
           <div className="works-page__items">
             <WorkItem
+              title="Notion Clone"
+              description="Клон Notion, созданный с использованием Next.js"
+              href="https://nextjs-notion-clone-ten.vercel.app"
+              imageSrc="/works/notion.jpg"
+            />
+            <WorkItem
+              title="ChatGPT Clone"
+              description="Клон ChatGPT, созданный с использованием Next.js"
+              href="https://nextjs-chatgpt-clone-sand.vercel.app"
+              imageSrc="/works/chatgpt.jpg"
+            />
+            <WorkItem
               title="Посбон"
               description="Веб-сайт агента ритуальных услуг организации «ПОСБОН»"
               href="https://lopanov-posbon24.ru"
@@ -34,9 +46,9 @@ const WorksPage = () => {
               withIcon
             />
             <WorkItem
-              title="BestChange Arbitrage Bot"
-              description="Telegram бот по поиску арбитражных сделок между Binance/Bybit и BestChange"
-              href="https://github.com/Ibarakilol/bestchange-arbitrage-bot"
+              title="Node.js API Template"
+              description="Простой Node.js API шаблон с JWT авторизацией"
+              href="https://github.com/Ibarakilol/futures-arbitrage-bot"
               withIcon
             />
             <WorkItem
