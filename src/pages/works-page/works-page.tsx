@@ -16,16 +16,22 @@ const WorksPage = () => {
           <span className="works-page__title">Работы</span>
           <div className="works-page__items">
             <WorkItem
-              title="Notion Clone"
+              title="Notion"
               description="Клон Notion, созданный с использованием Next.js"
               href="https://nextjs-notion-clone-ten.vercel.app"
               imageSrc="/works/notion.jpg"
             />
             <WorkItem
-              title="ChatGPT Clone"
+              title="ChatGPT"
               description="Клон ChatGPT, созданный с использованием Next.js"
               href="https://nextjs-chatgpt-clone-sand.vercel.app"
               imageSrc="/works/chatgpt.jpg"
+            />
+            <WorkItem
+              title="DALL·E"
+              description="Клон DALL·E, созданный с использованием Next.js"
+              href="https://nextjs-dalle-clone.vercel.app"
+              imageSrc="/works/dalle.jpg"
             />
             <WorkItem
               title="Посбон"
