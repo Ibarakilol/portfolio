@@ -19,13 +19,13 @@ const MainPage = () => {
       <div className="main-page">
         <section className="main-page__info">
           <h1 className="main-page__info-title">Никита Лопанов</h1>
-          <p className="main-page__info-text">Front-End разработчик ( React.js / Next.js )</p>
+          <p className="main-page__info-text">Frontend-разработчик (React.js / Next.js)</p>
         </section>
 
         <section className="main-page__block">
           <h2 className="main-page__block-title">Обо мне</h2>
           <p className="main-page__block-text">
-            Привет! Меня зовут Никита, я Front-End разработчик с большим опытом работы, увлеченный
+            Привет! Меня зовут Никита, я Frontend-разработчик с большим опытом работы, увлеченный
             созданием цифровых сервисов и материалов. У меня есть талант ко всему, что касается
             запуска "продуктов", от планирования и проектирования до решения реальных проблем с
             помощью кода.
@@ -43,7 +43,7 @@ const MainPage = () => {
           <h2 className="main-page__block-title">Мои навыки</h2>
           <p className="main-page__block-text">
             HTML5/CSS3, Flex/Grid, SCSS, BEM, Tailwind CSS, JavaScript/TypeScript, React.js,
-            Next.js, Mobx, Zustand, Jest, Webpack, Gulp, Node.js, Express.js, Git, Figma.
+            Next.js, Redux, Mobx, Zustand, Jest, Webpack, Gulp, Node.js, Express.js, Git, Figma.
           </p>
         </section>
 
